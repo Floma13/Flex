@@ -60,6 +60,16 @@
     box-sizing: border-box;
 }
 
+.footer{
+    background-color: rgb(119, 119, 119);
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding: 15px;
+    color: white;
+    margin-top: 2px;
+
+}
+
 @media screen and (min-width: 660px) and (max-width: 1200px) {
     body{
         background: rgb(238, 238, 167);
