@@ -3,8 +3,12 @@
     padding: 0;
 }
 
-.logo{
+.header{
     background: black;
+    padding: 0.5em 3em;
+    margin bottom: 2em;
+    display: flex;
+    justify-content: space-between;
 }
 
 .logo a h1{
@@ -14,14 +18,22 @@
     padding: 15px;
 }
 
-.navbar{
+.banner{
+    padding: 1.5em;
+    display: flex;
+    justify-content: center;
+    margin-top: 0%;
+
+}
+
+.navbar ul{
+    display: flex;
     list-style-type: none;
     text-align: center;
-    background: white;
 }
 
 .navbar ul li{
-    display: inline-block;
+    padding: 1em;
 }
 
 .navbar ul li a{
@@ -61,18 +73,78 @@
 }
 
 .footer{
-    background-color: rgb(119, 119, 119);
-    text-align: center;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    padding: 15px;
+    padding: 2em 3em;
     color: white;
-    margin-top: 2px;
-
+    margin-top: 4em;
+    border-top: 5px solid white;
+    display: flex;
+    justify-content: space-between;
 }
 
-@media screen and (min-width: 660px) and (max-width: 1200px) {
+.data{
+    background: grey;
+    padding: 2em;
+    color: black;
+    border-radius: 10%;
+}
+
+.data ul li{
+    list-style-type: none;
+}
+
+.map{
+    width: 60%;
+}
+
+@media screen and (min-width: 660px) and (max-width: 1200px){
     body{
-        background: rgb(238, 238, 167);
+        background: rgb(97, 97, 71);
     }
-    
+
+    .banner{
+        display: none;
+    }
+}
+
+@media screen and (min-width:660px) and (max-width:960px){
+    body{
+        background: burlywood;
+    }
+
+    header{
+        flex-wrap: wrap;
+    }
+
+    .logo{
+        width: 100%;
+        text-align: center;
+    }
+
+    .banner{
+        display: none;
+    }
+
+    .primero{
+        width: 100%;
+        padding: 2em;
+    }
+
+    .primero figure{
+        height: 250px;
+        overflow: hidden;
+    }
+
+    .segundo, .tercero{
+        width: 50%;
+        padding: 2em;
+    }
+
+    #contenedor article h2{
+        font-size: 2em;
+    }
+
+    .p{
+        font-size: 1.3em;
+    }
 }
