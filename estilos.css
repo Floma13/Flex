@@ -97,6 +97,10 @@
     width: 60%;
 }
 
+#contenedor img{
+    width: 100%;
+}
+
 @media screen and (min-width: 660px) and (max-width: 1200px){
     body{
         background: rgb(97, 97, 71);
